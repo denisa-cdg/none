@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+body {
+    background-image: url('beauty.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Stiluri pentru containerul formularului */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+/* Titlul formularului */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Stiluri pentru etichetele formularului */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Alinierea elementelor radio */
+input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Alinierea întregului formular folosind Flexbox */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Butonul de "Next" */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+h1 {
+    color: #ff69b4;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff85c0;
+}
+
+form label,
+form textarea,
+form select,
+form input {
+    display: block;
+    width: 90%;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+textarea {
+    width: %;
+    /* Lățimea completă a chenarului */
+    height: 100px;
+    /* Înălțimea câmpului (poți ajusta după dorință) */
+    padding: 10px;
+    /* Padding interior pentru text */
+    font-size: 1.1rem;
+    /* Mărimea textului pentru citire ușoară */
+    border-radius: 10px;
+    /* Colțuri rotunjite */
+    border: 2px solid #ccc;
+    /* Bordură subțire, gri */
+    background-color: #f9f9f9;
+    /* Fundal ușor deschis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Ușoară umbră */
+    resize: none;
+    /* Împiedică redimensionarea câmpului */
+    transition: all 0.3s ease;
+    /* Tranziție lină */
+}
+
+textarea:focus {
+    border-color: #4CAF50;
+    /* Bordură verde când este activ */
+    outline: none;
+    /* Elimină outline-ul implicit */
+    background-color: #fff;
+    /* Fundal alb când câmpul este activ */
+}

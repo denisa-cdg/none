@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Options</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dinner Plans 🍽️</h1>
+        <form id="dinnerForm" action="final.html" method="GET"> <!-- Adăugat action și method -->
+            <label>Where would you like to eat?</label>
+            <input type="radio" name="dinnerPlace" value="Restaurant" required> La un restaurant
+            <input type="radio" name="dinnerPlace" value="On the road" required> Pe drum
+            <input type="radio" name="dinnerPlace" value="alege denisa" required> Alege Denisa
+
+
+            <label>Choose a cuisine:</label>
+            <select name="cuisine" required>
+                <option value="">--Select--</option>
+                <option value="Chinese">Chinezesc</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Italian">Italian</option>
+                <option value="Indian">Indian</option>
+                <option value="denisa">Alege Denisa</option>
+            </select>
+
+            <label>Altceva:</label>
+            <textarea name="otherFood"
+                placeholder="Alege orice alt restaurant care nu a fost mentionat anterior. In cazul in care ai ales spre exemplu Italian, o sa te rog sa treci aici si tipul de mancare, precum pizza, paste etc."></textarea>
+
+            <button type="button" onclick="saveDinner()">Next</button>
+            <!-- Schimbat de la type="button" la type="submit" -->
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

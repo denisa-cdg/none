@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Options</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Snack Options 🍿</h1>
+        <form id="snacksForm">
+            <label>Alege bautura:</label>
+            <select name="drink" required>
+                <option value="">--Select--</option>
+                <option value="Apa">Apa</option>
+                <option value="Cola zero">Cola zero</option>
+                <option value="ceai">Ceai cu menta olympus</option>
+                <option value="Cafea">Cafea</option>
+            </select>
+
+            <label>Alege aroma de doritos:</label>
+            <select name="doritos" required>
+                <option value="">--Select--</option>
+                <option value="Nacho Cheese">Nacho Cheese(Portocaliu)</option>
+                <option value="Cool Ranch">Nacho chesese(Rosu)</option>
+                <option value="Spicy Sweet Chili">Spicy Sweet Chili(Mov)</option>
+            </select>
+
+            <label>Altceva:</label>
+            <textarea name="otherSnacks" placeholder="Alege orice alt snack ce nu a fost mentionat anterior"></textarea>
+
+            <button type="button" onclick="saveSnacks()">Next</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
